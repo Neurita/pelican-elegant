@@ -8,15 +8,14 @@
     {% from '_includes/_defaults.html' import SHARE_POST_INTRO with context %}
     {{ SHARE_POST_INTRO }}
     {% endif %}
-    <a href="{{article.share_post['twitter']}}" target="_blank" title="Share on Twitter">Twitter</a>
-    ❄
-    <a href="{{article.share_post['facebook']}}" target="_blank" title="Share on Facebook">Facebook</a>
-    ❄
-    <a href="{{article.share_post['google-plus']}}" target="_blank" title="Share on Google Plus">Google+</a>
-    ❄
-    <a href="{{article.share_post['email']}}" target="_blank" title="Share via Email">Email</a>
+    <a href="{{article.share_post['twitter']}}" target="_blank" title="Share on Twitter"><i class="fa fa-twitter share-post-links"></i></a>
+    
+    <a href="{{article.share_post['facebook']}}" target="_blank" title="Share on Facebook"><i class="fa fa-facebook share-post-links"></i></a>
+
+    <a href="{{article.share_post['google-plus']}}" target="_blank" title="Share on Google Plus"><i class="fa fa-google-plus share-post-links"></i></a>
+
+    <a href="{{article.share_post['email']}}" target="_blank" title="Share via Email"><i class="fa fa-envelope share-post-links"></i></a>
     </p>
 </section>
     {% endif %}
 {% endmacro %}
-
